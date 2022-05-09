@@ -18,6 +18,20 @@ html, body {
   color: bisque;
 }
 
+#toggled {
+  height: 50vh;
+  width: 50vw;
+  background-color: burlywood;
+  position: absolute;
+  color: black;
+  animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
 #footer {
   position: absolute;
   bottom: 0;
@@ -25,3 +39,4 @@ html, body {
   right: 0;
   background-color: aqua;
 }
+
