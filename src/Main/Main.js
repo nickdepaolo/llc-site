@@ -1,5 +1,6 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
+import { Button } from 'reactstrap';
 
 const Main = () => {
   const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'})
@@ -17,6 +18,7 @@ const Main = () => {
     {isTabletOrMobile && <p>You are a tablet or mobile phone</p>}
     <p>Your are in {isPortrait ? 'portrait' : 'landscape'} orientation</p>
     {isRetina && <p>You are retina</p>}
+    <Button color="danger">reactstrap button</Button>
     </div>
   )
 }
