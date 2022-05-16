@@ -10,7 +10,7 @@ const Main = () => {
   const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
   return (
-    <div>
+    <div id='main'>
     <br/>
     <h1>Device Test!</h1>
     {isDesktopOrLaptop && <p>You are a desktop or laptop</p>}

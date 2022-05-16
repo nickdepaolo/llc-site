@@ -27,7 +27,8 @@ const Header = () => {
                     <div id='toggledDesk'>
                         <h1>Menu</h1>
                     </div>}
-                    {toggle && isTabletOrMobile &&
+
+                {toggle && isTabletOrMobile &&
                     <div id='toggledMobile'>
                         <h1>Menu</h1>
                     </div>}
