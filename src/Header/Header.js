@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Hamburger from 'hamburger-react'
 import { useMediaQuery } from 'react-responsive'
-
+import {Link} from "react-router-dom"
 
 const Header = () => {
     const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'})
@@ -18,9 +18,9 @@ const Header = () => {
            <div>
                 <Hamburger onToggle={toggled => {
                 if (toggled){
-                    {setToggle(true)}         
+                    setToggle(true)        
                 }else{
-                    {setToggle(false)}
+                    setToggle(false)
                     }
                 }}/>
                 {toggle && isDesktopOrLaptop &&
@@ -31,6 +31,7 @@ const Header = () => {
                 {toggle && isTabletOrMobile &&
                     <div id='toggledMobile'>
                         <h1>Menu</h1>
+                        <button><Link to='/profile'>Profile 1</Link></button>
                     </div>}
            </div>
                 

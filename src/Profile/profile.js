@@ -1,9 +1,8 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
-import { Button } from 'reactstrap';
 import {Link} from "react-router-dom"
 
-const Main = () => {
+const Profile = () => {
   const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'})
   const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
@@ -13,15 +12,15 @@ const Main = () => {
   return (
     <div id='main'>
     <br/>
-    <h1>Device Test!</h1>
+    <h1>Profile</h1>
     {isDesktopOrLaptop && <p>You are a desktop or laptop</p>}
     {isBigScreen && <p>You  have a huge screen</p>}
     {isTabletOrMobile && <p>You are a tablet or mobile phone</p>}
     <p>Your are in {isPortrait ? 'portrait' : 'landscape'} orientation</p>
     {isRetina && <p>You are retina</p>}
-    <Button color="danger"><Link to='/profile'>Profile 1</Link></Button>
+    <button><Link to='/'>Home</Link></button>
     </div>
   )
 }
 
-export default Main
+export default Profile

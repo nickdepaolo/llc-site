@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import {BrowserRouter, Routes, Route,} from "react-router-dom";
-  import Main from '../Main/Main'
-
+import Main from '../Main/Main'
+import Profile from "../Profile/profile";
 const Router = () => {
 
     return(
@@ -10,6 +9,7 @@ const Router = () => {
           <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Main/>}/>
+                <Route path='/profile' element={<Profile/>}/>
             </Routes>
           </BrowserRouter>
           
