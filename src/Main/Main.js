@@ -19,7 +19,7 @@ const Main = () => {
     {isTabletOrMobile && <p>You are a tablet or mobile phone</p>}
     <p>Your are in {isPortrait ? 'portrait' : 'landscape'} orientation</p>
     {isRetina && <p>You are retina</p>}
-    <button><Link to='/profile'>______</Link></button>
+    <button type="button">any</button>
     </div>
   )
 }
