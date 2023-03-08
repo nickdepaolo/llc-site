@@ -17,16 +17,16 @@ const Main = () => {
       {isDesktopOrLaptop && 
         <div>
           <p>You are a desktop or laptop</p> 
-          <Stage width={100} height={100}>
-            <Layer>
+          <Stage width={300} height={300}>
+            {/* <Layer>
               <Line 
                 closed points={[0, 100, 100, 100, 0, 0]} fill="red"
               />
-            </Layer>
+            </Layer> */}
 
             <Layer>
             <Line 
-                closed points={[300, 300, 300, 0, 0, 0]} fill="yellow"
+                closed points={[100, 100, 50, 50, 100, 50]} fill="yellow"
               />
             </Layer>
           </Stage>
