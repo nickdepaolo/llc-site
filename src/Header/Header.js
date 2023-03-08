@@ -15,7 +15,6 @@ const Header = () => {
     return(
         <div id='header'>
             <h1>Header</h1>
-            <button><Link to='/'>Home</Link></button>
            <div>
                 <Hamburger onToggle={toggled => {
                 if (toggled){
